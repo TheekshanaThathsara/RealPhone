@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+    height: 100vh;
+    overflow: hidden;
+}
+
+nav{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    position: sticky;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo img{
+    width: 150px;
+}
+
+.logo{
+    flex-basis: 20%;
+    /*border: 1px solid black; */
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: larger;
+}
+
+.nav-links ul li a:hover{
+    color: red;
+}
+
+.information{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+#circle {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+
+}
+
+.feature img{
+    width: 70px;
+}
+
+.feature{
+    position: absolute;
+    display: flex;
+    color: #ffffff;
+
+}
+
+.feature div{
+    margin-left: 30px;
+}
+
+.feature div p{
+    margin-top: 8px;
+}
+.one{
+    top: 450px;
+    right: 50px;
+}
+
+.two{
+    top: 150px;
+    left: 350px;
+    transform: rotate(-90deg);
+
+}
+
+.three{
+    bottom: 450px;
+    left: 50px;
+    transform: rotate(-180deg);
+}
+
+.four{
+    bottom: 150px;
+    right: 350px;
+    transform: rotate(-270deg);
+}
+
+.mobile{
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.controls{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    text-align: center;
+    left: 1100px;
+    
+}
+
+.controls h3{
+    margin: 15px 0;
+    color: #ffffff;
+}
+
+#upBtn{
+    width: 15px;
+    cursor: pointer;
+    position: absolute;
+    left: 30px;
+}
+#downBtn{
+    width: 15px;
+    cursor: pointer;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 30px;
+    
+}
+
+.overlay{
+    width: 0;
+    height: 0;
+    border-top: 500px solid #ffffff;
+    border-right: 500px solid red;
+    border-bottom: 500px solid #ffffff;
+    border-left: 500px solid #ffffff;
+    top: 0;
+    left: 0;
+}
